@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:68.5%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+nav>ul{
+    background-color: transparent;
+    border: 2px solid rgb(205, 189, 189);
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 2rem auto;
+    /* text-align: center; */
+    list-style: none;
+    display: flex;
+    
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 0.6rem;
+    margin: 1rem;
+}
+
+nav>ul li:last-child a{
+    background-color: yellow;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem rgb(156, 143, 143);
+}
+
+#main{
+    position: relative;
+    /* overflow-x: hidden; */
+}
+
+#page{
+    height: 100vh;
+    width: 100vw;
+    background-color:red;
+    position: relative;
+}
+canvas{
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+}
+#page>h1{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+#page1{
+    width: 100vw;
+    height: 50vh;
+    background-color: green;
+    position: relative;
+}
+
+#page2,#page3,#page4{
+    position: relative;   
+        height: 100vh;
+        width: 100vw;
+        background-color:transparent;
+}
+
+#page2>h1{
+    position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 5rem;
+        letter-spacing: 2;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        color: black;
+}
+#page4{
+    background-color: rgb(230, 226, 226);
+}
+
+#page4{
+    padding-top: 10vh;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    font-size: 1vw;
+    width: 300%;
+    flex-wrap: nowrap;
+    height: 100vh;
+
+}
+
+.container {
+    width: 300%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 100;
+    font-size: 2vw;
+}
+
+section{
+    width: 100%;
+    background-color: RED;
+}
